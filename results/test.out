@@ -1,0 +1,1032 @@
+FNN: 
+
+with 1 epoch, 1.0 data fraction
+(cs6375) C:\Users\Madha\Desktop\cs6375\assign1>python ffnn.py --hidden_dim 100 --epochs 1 --train_data training.json --v
+al_data validation.json
+========== Loading data ==========
+========== Vectorizing data ==========
+========== Training for 1 epochs ==========
+Training started for epoch 1
+  0%|                                                                                          | 0/500 [00:00<?, ?it/s]C:\Users\Madha\miniconda3\envs\cs6375\lib\site-packages\torch\nn\modules\module.py:1553: UserWarning: Implicit dimension choice for log_softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+100%|████████████████████████████████████████████████████████████████████████████████| 500/500 [01:37<00:00,  5.14it/s]
+Training completed for epoch 1
+Training accuracy for epoch 1: 0.529875
+Training time for this epoch: 97.20406723022461
+Validation started for epoch 1
+100%|██████████████████████████████████████████████████████████████████████████████████| 50/50 [00:02<00:00, 23.29it/s]
+Validation completed for epoch 1
+Validation accuracy for epoch 1: 0.54875
+Validation time for this epoch: 2.1523494720458984
+========== Testing Model ==========
+Testing started
+100%|██████████████████████████████████████████████████████████████████████████████████| 50/50 [00:01<00:00, 27.70it/s]
+Testing completed
+Test accuracy: 0.0225
+Testing time: 1.8050041198730469
+
+
+with 5 epochs, 300 hidden dimension
+
+(cs6375) C:\Users\Madha\Desktop\cs6375\assign1>python ffnn.py --hidden_dim 300 --epochs 5 --train_data training.json --v
+al_data validation.json
+========== Loading data ==========
+========== Vectorizing data ==========
+========== Training for 5 epochs ==========
+Training started for epoch 1
+  0%|                                                                                          | 0/500 [00:00<?, ?it/s]C:\Users\Madha\miniconda3\envs\cs6375\lib\site-packages\torch\nn\modules\module.py:1553: UserWarning: Implicit dimension choice for log_softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+100%|████████████████████████████████████████████████████████████████████████████████| 500/500 [01:55<00:00,  4.33it/s]
+Training completed for epoch 1
+Training accuracy for epoch 1: 0.530625
+Training time for this epoch: 115.51360034942627
+Validation started for epoch 1
+100%|██████████████████████████████████████████████████████████████████████████████████| 50/50 [00:03<00:00, 15.43it/s]
+Validation completed for epoch 1
+Validation accuracy for epoch 1: 0.5325
+Validation time for this epoch: 3.2413535118103027
+Training started for epoch 2
+100%|████████████████████████████████████████████████████████████████████████████████| 500/500 [02:15<00:00,  3.70it/s]
+Training completed for epoch 2
+Training accuracy for epoch 2: 0.583125
+Training time for this epoch: 135.3045036792755
+Validation started for epoch 2
+100%|██████████████████████████████████████████████████████████████████████████████████| 50/50 [00:03<00:00, 16.20it/s]
+Validation completed for epoch 2
+Validation accuracy for epoch 2: 0.5925
+Validation time for this epoch: 3.0888495445251465
+Training started for epoch 3
+100%|████████████████████████████████████████████████████████████████████████████████| 500/500 [02:32<00:00,  3.27it/s]
+Training completed for epoch 3
+Training accuracy for epoch 3: 0.621375
+Training time for this epoch: 153.01037883758545
+Validation started for epoch 3
+100%|██████████████████████████████████████████████████████████████████████████████████| 50/50 [00:03<00:00, 15.58it/s]
+Validation completed for epoch 3
+Validation accuracy for epoch 3: 0.57375
+Validation time for this epoch: 3.212076425552368
+Training started for epoch 4
+100%|████████████████████████████████████████████████████████████████████████████████| 500/500 [02:55<00:00,  2.86it/s]
+Training completed for epoch 4
+Training accuracy for epoch 4: 0.651
+Training time for this epoch: 175.11376571655273
+Validation started for epoch 4
+100%|██████████████████████████████████████████████████████████████████████████████████| 50/50 [00:03<00:00, 14.76it/s]
+Validation completed for epoch 4
+Validation accuracy for epoch 4: 0.5625
+Validation time for this epoch: 3.3895981311798096
+Training started for epoch 5
+100%|████████████████████████████████████████████████████████████████████████████████| 500/500 [03:25<00:00,  2.44it/s]
+Training completed for epoch 5
+Training accuracy for epoch 5: 0.663375
+Training time for this epoch: 205.11848855018616
+Validation started for epoch 5
+100%|██████████████████████████████████████████████████████████████████████████████████| 50/50 [00:03<00:00, 14.46it/s]
+Validation completed for epoch 5
+Validation accuracy for epoch 5: 0.605
+Validation time for this epoch: 3.4589309692382812
+========== Testing Model ==========
+Testing started
+100%|██████████████████████████████████████████████████████████████████████████████████| 50/50 [00:03<00:00, 16.14it/s]
+Testing completed
+Test accuracy: 0.01875
+Testing time: 3.09945011138916
+
+
+
+
+with 300 hidden dims, 5 epochs, 0.5 data fraction
+(cs6375) C:\Users\Madha\Desktop\cs6375\assign1>python ffnn.py --hidden_dim 300 --epochs 5 --train_data training.json --val_data validation.json --data_fraction 0.5
+========== Loading data ==========
+========== Vectorizing data ==========
+========== Training for 5 epochs ==========
+Training started for epoch 1
+  0%|                                                                                                                                                              | 0/250 [00:00<?, ?it/s]C:\Users\Madha\miniconda3\envs\cs6375\lib\site-packages\torch\nn\modules\module.py:1553: UserWarning: Implicit dimension choice for log_softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 250/250 [00:41<00:00,  6.09it/s]
+Training completed for epoch 1
+Training accuracy for epoch 1: 0.49425
+Training time for this epoch: 41.063146114349365
+Validation started for epoch 1
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 50/50 [00:02<00:00, 24.50it/s]
+Validation completed for epoch 1
+Validation accuracy for epoch 1: 0.5475
+Validation time for this epoch: 2.0433003902435303
+Training started for epoch 2
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 250/250 [00:42<00:00,  5.87it/s]
+Training completed for epoch 2
+Training accuracy for epoch 2: 0.564
+Training time for this epoch: 42.58194375038147
+Validation started for epoch 2
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 50/50 [00:01<00:00, 25.72it/s]
+Validation completed for epoch 2
+Validation accuracy for epoch 2: 0.5275
+Validation time for this epoch: 1.9456713199615479
+Training started for epoch 3
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 250/250 [00:41<00:00,  5.98it/s]
+Training completed for epoch 3
+Training accuracy for epoch 3: 0.6095
+Training time for this epoch: 41.77833652496338
+Validation started for epoch 3
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 50/50 [00:01<00:00, 27.73it/s]
+Validation completed for epoch 3
+Validation accuracy for epoch 3: 0.58375
+Validation time for this epoch: 1.8054585456848145
+Training started for epoch 4
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 250/250 [00:48<00:00,  5.12it/s]
+Training completed for epoch 4
+Training accuracy for epoch 4: 0.6565
+Training time for this epoch: 48.79762268066406
+Validation started for epoch 4
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 50/50 [00:01<00:00, 27.48it/s]
+Validation completed for epoch 4
+Validation accuracy for epoch 4: 0.5775
+Validation time for this epoch: 1.8207457065582275
+Training started for epoch 5
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 250/250 [00:52<00:00,  4.79it/s]
+Training completed for epoch 5
+Training accuracy for epoch 5: 0.67875
+Training time for this epoch: 52.179513692855835
+Validation started for epoch 5
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 50/50 [00:02<00:00, 22.55it/s]
+Validation completed for epoch 5
+Validation accuracy for epoch 5: 0.59625
+Validation time for this epoch: 2.2178380489349365
+========== Testing Model ==========
+Testing started
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 50/50 [00:02<00:00, 23.03it/s]
+Testing completed
+Test accuracy: 0.09125
+Testing time: 2.171712875366211
+
+(cs6375) C:\Users\Madha\Desktop\cs6375\assign1>
+
+
+
+
+with 300 hidden dims, 10 epochs, 0.5 data fractions
+(cs6375) C:\Users\Madha\Desktop\cs6375\assign1>python ffnn.py --hidden_dim 300 --epochs 10 --train_data training.json --val_data validation.json --data_fraction 0.5
+========== Loading data ==========
+========== Vectorizing data ==========
+========== Training for 10 epochs ==========
+Training started for epoch 1
+  0%|                                                                                                                                                              | 0/250 [00:00<?, ?it/s]C:\Users\Madha\miniconda3\envs\cs6375\lib\site-packages\torch\nn\modules\module.py:1553: UserWarning: Implicit dimension choice for log_softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 250/250 [00:42<00:00,  5.93it/s]
+Training completed for epoch 1
+Training accuracy for epoch 1: 0.49425
+Training time for this epoch: 42.15471029281616
+Validation started for epoch 1
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 50/50 [00:01<00:00, 33.18it/s]
+Validation completed for epoch 1
+Validation accuracy for epoch 1: 0.5475
+Validation time for this epoch: 1.5098228454589844
+Training started for epoch 2
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 250/250 [00:41<00:00,  5.96it/s]
+Training completed for epoch 2
+Training accuracy for epoch 2: 0.564
+Training time for this epoch: 41.95701479911804
+Validation started for epoch 2
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 50/50 [00:02<00:00, 19.21it/s]
+Validation completed for epoch 2
+Validation accuracy for epoch 2: 0.5275
+Validation time for this epoch: 2.60475754737854
+Training started for epoch 3
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 250/250 [00:42<00:00,  5.91it/s]
+Training completed for epoch 3
+Training accuracy for epoch 3: 0.6095
+Training time for this epoch: 42.286396503448486
+Validation started for epoch 3
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 50/50 [00:01<00:00, 25.17it/s]
+Validation completed for epoch 3
+Validation accuracy for epoch 3: 0.58375
+Validation time for this epoch: 1.9877326488494873
+Training started for epoch 4
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 250/250 [00:49<00:00,  5.10it/s]
+Training completed for epoch 4
+Training accuracy for epoch 4: 0.6565
+Training time for this epoch: 49.068166732788086
+Validation started for epoch 4
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 50/50 [00:01<00:00, 30.96it/s]
+Validation completed for epoch 4
+Validation accuracy for epoch 4: 0.5775
+Validation time for this epoch: 1.616211175918579
+Training started for epoch 5
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 250/250 [00:53<00:00,  4.70it/s]
+Training completed for epoch 5
+Training accuracy for epoch 5: 0.67875
+Training time for this epoch: 53.24060392379761
+Validation started for epoch 5
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 50/50 [00:02<00:00, 20.87it/s]
+Validation completed for epoch 5
+Validation accuracy for epoch 5: 0.59625
+Validation time for this epoch: 2.397252321243286
+Training started for epoch 6
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 250/250 [00:53<00:00,  4.69it/s]
+Training completed for epoch 6
+Training accuracy for epoch 6: 0.715
+Training time for this epoch: 53.279539585113525
+Validation started for epoch 6
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 50/50 [00:02<00:00, 22.65it/s]
+Validation completed for epoch 6
+Validation accuracy for epoch 6: 0.515
+Validation time for this epoch: 2.2100465297698975
+Training started for epoch 7
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 250/250 [00:54<00:00,  4.58it/s]
+Training completed for epoch 7
+Training accuracy for epoch 7: 0.7195
+Training time for this epoch: 54.536017179489136
+Validation started for epoch 7
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 50/50 [00:02<00:00, 24.93it/s]
+Validation completed for epoch 7
+Validation accuracy for epoch 7: 0.5875
+Validation time for this epoch: 2.007450580596924
+Training started for epoch 8
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 250/250 [00:51<00:00,  4.82it/s]
+Training completed for epoch 8
+Training accuracy for epoch 8: 0.75525
+Training time for this epoch: 51.86298871040344
+Validation started for epoch 8
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 50/50 [00:02<00:00, 20.23it/s]
+Validation completed for epoch 8
+Validation accuracy for epoch 8: 0.59875
+Validation time for this epoch: 2.473233699798584
+Training started for epoch 9
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 250/250 [00:53<00:00,  4.65it/s]
+Training completed for epoch 9
+Training accuracy for epoch 9: 0.78925
+Training time for this epoch: 53.75211024284363
+Validation started for epoch 9
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 50/50 [00:01<00:00, 26.55it/s]
+Validation completed for epoch 9
+Validation accuracy for epoch 9: 0.5325
+Validation time for this epoch: 1.8849573135375977
+Training started for epoch 10
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 250/250 [00:55<00:00,  4.53it/s]
+Training completed for epoch 10
+Training accuracy for epoch 10: 0.816
+Training time for this epoch: 55.22047424316406
+Validation started for epoch 10
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 50/50 [00:01<00:00, 32.30it/s]
+Validation completed for epoch 10
+Validation accuracy for epoch 10: 0.6025
+Validation time for this epoch: 1.5481531620025635
+========== Testing Model ==========
+Testing started
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 50/50 [00:01<00:00, 26.01it/s]
+Testing completed
+Test accuracy: 0.0425
+Testing time: 1.924433708190918
+
+(cs6375) C:\Users\Madha\Desktop\cs6375\assign1>
+
+
+
+with 500 hidden dims, 10 epochs, 0.5 data fraction
+(cs6375) C:\Users\Madha\Desktop\cs6375\assign1>python ffnn.py --hidden_dim 500 --epochs 10 --train_data training.json --val_data validation.json --data_fraction 0.5
+========== Loading data ==========
+========== Vectorizing data ==========
+========== Training for 10 epochs ==========
+Training started for epoch 1
+  0%|                                                                                                                                                              | 0/250 [00:00<?, ?it/s]C:\Users\Madha\miniconda3\envs\cs6375\lib\site-packages\torch\nn\modules\module.py:1553: UserWarning: Implicit dimension choice for log_softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 250/250 [01:06<00:00,  3.75it/s]
+Training completed for epoch 1
+Training accuracy for epoch 1: 0.49175
+Training time for this epoch: 66.6932864189148
+Validation started for epoch 1
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:01<00:00, 12.84it/s]
+Validation completed for epoch 1
+Validation accuracy for epoch 1: 0.56
+Validation time for this epoch: 1.9499883651733398
+Training started for epoch 2
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 250/250 [01:08<00:00,  3.67it/s]
+Training completed for epoch 2
+Training accuracy for epoch 2: 0.56625
+Training time for this epoch: 68.16735887527466
+Validation started for epoch 2
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:01<00:00, 13.25it/s]
+Validation completed for epoch 2
+Validation accuracy for epoch 2: 0.54
+Validation time for this epoch: 1.888554573059082
+Training started for epoch 3
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 250/250 [01:08<00:00,  3.66it/s]
+Training completed for epoch 3
+Training accuracy for epoch 3: 0.61425
+Training time for this epoch: 68.37607169151306
+Validation started for epoch 3
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:01<00:00, 13.27it/s]
+Validation completed for epoch 3
+Validation accuracy for epoch 3: 0.5325
+Validation time for this epoch: 1.8862924575805664
+Training started for epoch 4
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 250/250 [01:18<00:00,  3.17it/s]
+Training completed for epoch 4
+Training accuracy for epoch 4: 0.642
+Training time for this epoch: 78.97617101669312
+Validation started for epoch 4
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:01<00:00, 13.05it/s]
+Validation completed for epoch 4
+Validation accuracy for epoch 4: 0.5775
+Validation time for this epoch: 1.9182772636413574
+Training started for epoch 5
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 250/250 [01:21<00:00,  3.05it/s]
+Training completed for epoch 5
+Training accuracy for epoch 5: 0.6545
+Training time for this epoch: 82.00484228134155
+Validation started for epoch 5
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:01<00:00, 14.82it/s]
+Validation completed for epoch 5
+Validation accuracy for epoch 5: 0.54
+Validation time for this epoch: 1.6886284351348877
+Training started for epoch 6
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 250/250 [01:23<00:00,  2.98it/s]
+Training completed for epoch 6
+Training accuracy for epoch 6: 0.69675
+Training time for this epoch: 83.96345710754395
+Validation started for epoch 6
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:01<00:00, 19.50it/s]
+Validation completed for epoch 6
+Validation accuracy for epoch 6: 0.595
+Validation time for this epoch: 1.2840297222137451
+Training started for epoch 7
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 250/250 [01:27<00:00,  2.85it/s]
+Training completed for epoch 7
+Training accuracy for epoch 7: 0.72
+Training time for this epoch: 87.7378990650177
+Validation started for epoch 7
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:01<00:00, 14.06it/s]
+Validation completed for epoch 7
+Validation accuracy for epoch 7: 0.6125
+Validation time for this epoch: 1.77890944480896
+Training started for epoch 8
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 250/250 [01:29<00:00,  2.79it/s]
+Training completed for epoch 8
+Training accuracy for epoch 8: 0.7485
+Training time for this epoch: 89.66136574745178
+Validation started for epoch 8
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:01<00:00, 19.15it/s]
+Validation completed for epoch 8
+Validation accuracy for epoch 8: 0.575
+Validation time for this epoch: 1.307741403579712
+Training started for epoch 9
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 250/250 [01:30<00:00,  2.75it/s]
+Training completed for epoch 9
+Training accuracy for epoch 9: 0.789
+Training time for this epoch: 90.79832148551941
+Validation started for epoch 9
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:01<00:00, 13.24it/s]
+Validation completed for epoch 9
+Validation accuracy for epoch 9: 0.5525
+Validation time for this epoch: 1.8915770053863525
+Training started for epoch 10
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 250/250 [01:31<00:00,  2.74it/s]
+Training completed for epoch 10
+Training accuracy for epoch 10: 0.8295
+Training time for this epoch: 91.14826154708862
+Validation started for epoch 10
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:01<00:00, 13.09it/s]
+Validation completed for epoch 10
+Validation accuracy for epoch 10: 0.575
+Validation time for this epoch: 1.9123375415802002
+========== Testing Model ==========
+Testing started
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:00<00:00, 25.48it/s]
+Testing completed
+Test accuracy: 0.125
+Testing time: 0.982215166091919
+
+(cs6375) C:\Users\Madha\Desktop\cs6375\assign1>
+
+
+
+
+(cs6375) C:\Users\Madha\Desktop\cs6375\assign1>python ffnn.py --hidden_dim 500 --epochs 15 --train_data training.json --val_data validation.json --data_fraction 0.5
+========== Loading data ==========
+========== Vectorizing data ==========
+========== Training for 15 epochs ==========
+Training started for epoch 1
+  0%|                                                                                                                                                              | 0/250 [00:00<?, ?it/s]C:\Users\Madha\miniconda3\envs\cs6375\lib\site-packages\torch\nn\modules\module.py:1553: UserWarning: Implicit dimension choice for log_softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 250/250 [01:09<00:00,  3.59it/s]
+Mini-batch 250/250, Loss: 0.9717523455619812
+Training completed for epoch 1
+Training accuracy for epoch 1: 0.49175
+Training time for this epoch: 69.65264987945557
+Validation started for epoch 1
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:01<00:00, 23.20it/s]
+Validation completed for epoch 1
+Validation accuracy for epoch 1: 0.56
+Validation time for this epoch: 1.078566312789917
+Training started for epoch 2
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 250/250 [01:10<00:00,  3.52it/s]
+Mini-batch 250/250, Loss: 0.7941839694976807
+Training completed for epoch 2
+Training accuracy for epoch 2: 0.56625
+Training time for this epoch: 70.96318101882935
+Validation started for epoch 2
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:01<00:00, 15.03it/s]
+Validation completed for epoch 2
+Validation accuracy for epoch 2: 0.54
+Validation time for this epoch: 1.665048360824585
+Training started for epoch 3
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 250/250 [01:09<00:00,  3.58it/s]
+Mini-batch 250/250, Loss: 1.388533353805542
+Training completed for epoch 3
+Training accuracy for epoch 3: 0.61425
+Training time for this epoch: 69.78710889816284
+Validation started for epoch 3
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:01<00:00, 13.13it/s]
+Validation completed for epoch 3
+Validation accuracy for epoch 3: 0.5325
+Validation time for this epoch: 1.9080748558044434
+Training started for epoch 4
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 250/250 [01:23<00:00,  2.99it/s]
+Mini-batch 250/250, Loss: 0.7298926115036011
+Training completed for epoch 4
+Training accuracy for epoch 4: 0.642
+Training time for this epoch: 83.49128079414368
+Validation started for epoch 4
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:01<00:00, 16.38it/s]
+Validation completed for epoch 4
+Validation accuracy for epoch 4: 0.5775
+Validation time for this epoch: 1.5281648635864258
+Training started for epoch 5
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 250/250 [01:20<00:00,  3.12it/s]
+Mini-batch 250/250, Loss: 0.6871713399887085
+Training completed for epoch 5
+Training accuracy for epoch 5: 0.6545
+Training time for this epoch: 80.10898089408875
+Validation started for epoch 5
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:01<00:00, 16.78it/s]
+Validation completed for epoch 5
+Validation accuracy for epoch 5: 0.54
+Validation time for this epoch: 1.4916388988494873
+Training started for epoch 6
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 250/250 [01:24<00:00,  2.94it/s]
+Mini-batch 250/250, Loss: 0.5360541939735413
+Training completed for epoch 6
+Training accuracy for epoch 6: 0.69675
+Training time for this epoch: 84.91738104820251
+Validation started for epoch 6
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00, 11.31it/s]
+Validation completed for epoch 6
+Validation accuracy for epoch 6: 0.595
+Validation time for this epoch: 2.2114198207855225
+Training started for epoch 7
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 250/250 [01:27<00:00,  2.87it/s]
+Mini-batch 250/250, Loss: 1.272806167602539
+Training completed for epoch 7
+Training accuracy for epoch 7: 0.72
+Training time for this epoch: 87.02726435661316
+Validation started for epoch 7
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:01<00:00, 16.99it/s]
+Validation completed for epoch 7
+Validation accuracy for epoch 7: 0.6125
+Validation time for this epoch: 1.4724717140197754
+Training started for epoch 8
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 250/250 [01:22<00:00,  3.01it/s]
+Mini-batch 250/250, Loss: 0.3859589993953705
+Training completed for epoch 8
+Training accuracy for epoch 8: 0.7485
+Training time for this epoch: 82.94363713264465
+Validation started for epoch 8
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00, 12.30it/s]
+Validation completed for epoch 8
+Validation accuracy for epoch 8: 0.575
+Validation time for this epoch: 2.034242630004883
+Training started for epoch 9
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 250/250 [01:27<00:00,  2.85it/s]
+Mini-batch 250/250, Loss: 0.24734428524971008
+Training completed for epoch 9
+Training accuracy for epoch 9: 0.789
+Training time for this epoch: 87.57513642311096
+Validation started for epoch 9
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:01<00:00, 13.07it/s]
+Validation completed for epoch 9
+Validation accuracy for epoch 9: 0.5525
+Validation time for this epoch: 1.914149522781372
+Training started for epoch 10
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 250/250 [01:34<00:00,  2.65it/s]
+Mini-batch 250/250, Loss: 0.3637107014656067
+Training completed for epoch 10
+Training accuracy for epoch 10: 0.8295
+Training time for this epoch: 94.49878191947937
+Validation started for epoch 10
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:01<00:00, 15.38it/s]
+Validation completed for epoch 10
+Validation accuracy for epoch 10: 0.575
+Validation time for this epoch: 1.626720666885376
+Training started for epoch 11
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 250/250 [01:29<00:00,  2.80it/s]
+Mini-batch 250/250, Loss: 0.7841264009475708
+Training completed for epoch 11
+Training accuracy for epoch 11: 0.83775
+Training time for this epoch: 89.1728343963623
+Validation started for epoch 11
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:01<00:00, 14.94it/s]
+Validation completed for epoch 11
+Validation accuracy for epoch 11: 0.6275
+Validation time for this epoch: 1.676743984222412
+Training started for epoch 12
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 250/250 [01:30<00:00,  2.76it/s]
+Mini-batch 250/250, Loss: 0.4052727222442627
+Training completed for epoch 12
+Training accuracy for epoch 12: 0.8755
+Training time for this epoch: 90.59866571426392
+Validation started for epoch 12
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:01<00:00, 13.09it/s]
+Validation completed for epoch 12
+Validation accuracy for epoch 12: 0.6175
+Validation time for this epoch: 1.912470817565918
+Training started for epoch 13
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 250/250 [01:30<00:00,  2.78it/s]
+Mini-batch 250/250, Loss: 0.14536547660827637
+Training completed for epoch 13
+Training accuracy for epoch 13: 0.8985
+Training time for this epoch: 90.06221532821655
+Validation started for epoch 13
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:01<00:00, 24.05it/s]
+Validation completed for epoch 13
+Validation accuracy for epoch 13: 0.645
+Validation time for this epoch: 1.0413289070129395
+Training started for epoch 14
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 250/250 [01:32<00:00,  2.70it/s]
+Mini-batch 250/250, Loss: 0.08885295689105988
+Training completed for epoch 14
+Training accuracy for epoch 14: 0.92875
+Training time for this epoch: 92.58046984672546
+Validation started for epoch 14
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:01<00:00, 17.30it/s]
+Validation completed for epoch 14
+Validation accuracy for epoch 14: 0.59
+Validation time for this epoch: 1.4483792781829834
+Training started for epoch 15
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 250/250 [01:32<00:00,  2.70it/s]
+Mini-batch 250/250, Loss: 0.2973109483718872
+Training completed for epoch 15
+Training accuracy for epoch 15: 0.9135
+Training time for this epoch: 92.52619290351868
+Validation started for epoch 15
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:01<00:00, 19.64it/s]
+Validation completed for epoch 15
+Validation accuracy for epoch 15: 0.6175
+Validation time for this epoch: 1.2754836082458496
+========== Testing Model ==========
+Testing started
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:00<00:00, 25.87it/s]
+Testing completed
+Test accuracy: 0.0125
+Testing time: 0.9675023555755615
+
+(cs6375) C:\Users\Madha\Desktop\cs6375\assign1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+RNN:
+
+300 hidden dims, 5 epochs, 1.0 data fraction
+
+(cs6375) C:\Users\Madha\Desktop\cs6375\assign1>python rnn.py --hidden_dim 300 --epochs 5 --train_data training.json --va
+l_data validation.json --data_fraction 1.0
+========== Loading data ==========
+========== Vectorizing data ==========
+Training started for epoch 1
+100%|████████████████████████████████████████████████████████████████████████████████| 500/500 [11:01<00:00,  1.32s/it]
+Average Training Loss for epoch 1: 2.5742
+Training completed for epoch 1
+Training accuracy for epoch 1: 0.437625
+Validation started for epoch 1
+100%|████████████████████████████████████████████████████████████████████████████████| 800/800 [00:19<00:00, 40.88it/s]
+Validation completed for epoch 1
+Validation accuracy for epoch 1: 0.5
+Training started for epoch 2
+100%|████████████████████████████████████████████████████████████████████████████████| 500/500 [12:02<00:00,  1.44s/it]
+Average Training Loss for epoch 2: 1.3026
+Training completed for epoch 2
+Training accuracy for epoch 2: 0.445125
+Validation started for epoch 2
+100%|████████████████████████████████████████████████████████████████████████████████| 800/800 [00:18<00:00, 43.08it/s]
+Validation completed for epoch 2
+Validation accuracy for epoch 2: 0.48375
+Training done to avoid overfitting!
+Best validation accuracy is: 0.5
+========== Testing Model ==========
+Testing started
+100%|████████████████████████████████████████████████████████████████████████████████| 800/800 [00:14<00:00, 53.37it/s]
+Testing completed
+Test accuracy: 0.25%
+
+(cs6375) C:\Users\Madha\Desktop\cs6375\assign1>
+
+
+
+
+
+
+500 hidden dims, 5 epochs, 1.0 data fraction.
+(cs6375) C:\Users\Madha\Desktop\cs6375\assign1>python rnn.py --hidden_dim 500 --epochs 5 --train_data training.json --val_data validation.json --data_fraction 1.0
+========== Loading data ==========
+========== Vectorizing data ==========
+Training started for epoch 1
+100%|████████████████████████████████████████████████████████████████████████████████| 500/500 [12:44<00:00,  1.53s/it]
+Average Training Loss for epoch 1: 2.8759
+Training completed for epoch 1
+Training accuracy for epoch 1: 0.38825
+Validation started for epoch 1
+100%|████████████████████████████████████████████████████████████████████████████████| 800/800 [00:19<00:00, 41.86it/s]
+Validation completed for epoch 1
+Validation accuracy for epoch 1: 0.39375
+Training started for epoch 2
+100%|████████████████████████████████████████████████████████████████████████████████| 500/500 [11:51<00:00,  1.42s/it]
+Average Training Loss for epoch 2: 1.3022
+Training completed for epoch 2
+Training accuracy for epoch 2: 0.418125
+Validation started for epoch 2
+100%|████████████████████████████████████████████████████████████████████████████████| 800/800 [00:18<00:00, 43.17it/s]
+Validation completed for epoch 2
+Validation accuracy for epoch 2: 0.42
+Training started for epoch 3
+100%|████████████████████████████████████████████████████████████████████████████████| 500/500 [10:34<00:00,  1.27s/it]
+Average Training Loss for epoch 3: 1.3343
+Training completed for epoch 3
+Training accuracy for epoch 3: 0.418
+Validation started for epoch 3
+100%|████████████████████████████████████████████████████████████████████████████████| 800/800 [00:16<00:00, 49.02it/s]
+Validation completed for epoch 3
+Validation accuracy for epoch 3: 0.3975
+Training started for epoch 4
+100%|████████████████████████████████████████████████████████████████████████████████| 500/500 [10:26<00:00,  1.25s/it]
+Average Training Loss for epoch 4: 1.6039
+Training completed for epoch 4
+Training accuracy for epoch 4: 0.3895
+Validation started for epoch 4
+100%|████████████████████████████████████████████████████████████████████████████████| 800/800 [00:14<00:00, 53.46it/s]
+Validation completed for epoch 4
+Validation accuracy for epoch 4: 0.42625
+Training started for epoch 5
+100%|████████████████████████████████████████████████████████████████████████████████| 500/500 [10:12<00:00,  1.22s/it]
+Average Training Loss for epoch 5: 1.9302
+Training completed for epoch 5
+Training accuracy for epoch 5: 0.39825
+Validation started for epoch 5
+100%|████████████████████████████████████████████████████████████████████████████████| 800/800 [00:14<00:00, 53.42it/s]
+Validation completed for epoch 5
+Validation accuracy for epoch 5: 0.2625
+Training done to avoid overfitting!
+Best validation accuracy is: 0.42625
+========== Testing Model ==========
+Testing started
+100%|████████████████████████████████████████████████████████████████████████████████| 800/800 [00:12<00:00, 65.36it/s]
+Testing completed
+Test accuracy: 14.37%
+
+(cs6375) C:\Users\Madha\Desktop\cs6375\assign1>c
+
+
+with 300 hidden dims, 5 epochs, 0.2 data fraction
+(cs6375) C:\Users\Madha\Desktop\cs6375\assign1>python rnn.py --hidden_dim 300 --epochs 5 --train_data training.json --val_data validation.json --data_fraction 0.2
+========== Loading data ==========
+========== Vectorizing data ==========
+Training started for epoch 1
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 100/100 [01:53<00:00,  1.13s/it]
+tensor(4.0326)
+Training completed for epoch 1
+Training accuracy for epoch 1: 0.4
+Validation started for epoch 1
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 160/160 [00:03<00:00, 45.99it/s]
+Validation completed for epoch 1
+Validation accuracy for epoch 1: 0.4
+Training started for epoch 2
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 100/100 [01:54<00:00,  1.15s/it]
+tensor(1.2961)
+Training completed for epoch 2
+Training accuracy for epoch 2: 0.398125
+Validation started for epoch 2
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 160/160 [00:02<00:00, 67.68it/s]
+Validation completed for epoch 2
+Validation accuracy for epoch 2: 0.44375
+Training started for epoch 3
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 100/100 [01:50<00:00,  1.11s/it]
+tensor(1.2015)
+Training completed for epoch 3
+Training accuracy for epoch 3: 0.42125
+Validation started for epoch 3
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 160/160 [00:02<00:00, 70.85it/s]
+Validation completed for epoch 3
+Validation accuracy for epoch 3: 0.45625
+Training started for epoch 4
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 100/100 [01:59<00:00,  1.19s/it]
+tensor(1.2980)
+Training completed for epoch 4
+Training accuracy for epoch 4: 0.420625
+Validation started for epoch 4
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 160/160 [00:03<00:00, 46.93it/s]
+Validation completed for epoch 4
+Validation accuracy for epoch 4: 0.43125
+Training started for epoch 5
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 100/100 [02:01<00:00,  1.21s/it]
+tensor(1.2402)
+Training completed for epoch 5
+Training accuracy for epoch 5: 0.41625
+Validation started for epoch 5
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 160/160 [00:03<00:00, 45.48it/s]
+Validation completed for epoch 5
+Validation accuracy for epoch 5: 0.45
+Training started for epoch 6
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 100/100 [01:51<00:00,  1.12s/it]
+tensor(1.1980)
+Training completed for epoch 6
+Training accuracy for epoch 6: 0.416875
+Validation started for epoch 6
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 160/160 [00:02<00:00, 60.65it/s]
+Validation completed for epoch 6
+Validation accuracy for epoch 6: 0.375
+Training done to avoid overfitting!
+Best validation accuracy is: 0.45
+========== Testing Model ==========
+Testing started
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 160/160 [00:02<00:00, 71.13it/s]
+Testing completed
+Test accuracy: 3.12%
+
+(cs6375) C:\Users\Madha\Desktop\cs6375\assign1>
+
+
+
+
+300 hidden dims, 5 epochs, 0.2 data fraction
+(cs6375) C:\Users\Madha\Desktop\cs6375\assign1>python rnn.py --hidden_dim 300 --epochs 5 --train_data training.json --val_data validation.json --data_fraction 0.2
+========== Loading data ==========
+========== Vectorizing data ==========
+Training started for epoch 1
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 100/100 [01:48<00:00,  1.08s/it]
+Average Training Loss for epoch 1: 4.3646
+Training completed for epoch 1
+Training accuracy for epoch 1: 0.355625
+Validation started for epoch 1
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 160/160 [00:03<00:00, 43.46it/s]
+Validation completed for epoch 1
+Validation accuracy for epoch 1: 0.35625
+Training started for epoch 2
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 100/100 [01:59<00:00,  1.20s/it]
+Average Training Loss for epoch 2: 1.1849
+Training completed for epoch 2
+Training accuracy for epoch 2: 0.426875
+Validation started for epoch 2
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 160/160 [00:03<00:00, 47.77it/s]
+Validation completed for epoch 2
+Validation accuracy for epoch 2: 0.4375
+Training started for epoch 3
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 100/100 [02:10<00:00,  1.30s/it]
+Average Training Loss for epoch 3: 1.2152
+Training completed for epoch 3
+Training accuracy for epoch 3: 0.420625
+Validation started for epoch 3
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 160/160 [00:03<00:00, 44.39it/s]
+Validation completed for epoch 3
+Validation accuracy for epoch 3: 0.45
+Training started for epoch 4
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 100/100 [02:18<00:00,  1.39s/it]
+Average Training Loss for epoch 4: 1.2137
+Training completed for epoch 4
+Training accuracy for epoch 4: 0.438125
+Validation started for epoch 4
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 160/160 [00:05<00:00, 29.79it/s]
+Validation completed for epoch 4
+Validation accuracy for epoch 4: 0.35
+Training done to avoid overfitting!
+Best validation accuracy is: 0.45
+========== Testing Model ==========
+Testing started
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 160/160 [00:04<00:00, 38.78it/s]
+Testing completed
+Test accuracy: 8.12%
+
+(cs6375) C:\Users\Madha\Desktop\cs6375\assign1>
+
+
+
+
+300 hidden dims, 5 epochs, 0.5 data fraction
+(cs6375) C:\Users\Madha\Desktop\cs6375\assign1>python rnn.py --hidden_dim 300 --epochs 5 --train_data training.json --val_data validation.js
+on --data_fraction 0.5
+========== Loading data ==========
+========== Vectorizing data ==========
+Training started for epoch 1
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 250/250 [08:41<00:00,  2.09s/it]
+Average Training Loss for epoch 1: 5.1236
+Training completed for epoch 1
+Training accuracy for epoch 1: 0.41325
+Validation started for epoch 1
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 400/400 [00:12<00:00, 31.80it/s]
+Validation completed for epoch 1
+Validation accuracy for epoch 1: 0.5125
+Training started for epoch 2
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 250/250 [10:28<00:00,  2.51s/it]
+Average Training Loss for epoch 2: 1.1345
+Training completed for epoch 2
+Training accuracy for epoch 2: 0.47225
+Validation started for epoch 2
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 400/400 [00:15<00:00, 25.88it/s]
+Validation completed for epoch 2
+Validation accuracy for epoch 2: 0.5
+Training done to avoid overfitting!
+Best validation accuracy is: 0.5125
+========== Testing Model ==========
+Testing started
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 400/400 [00:12<00:00, 32.29it/s]
+Testing completed
+Test accuracy: 6.50%
+
+(cs6375) C:\Users\Madha\Desktop\cs6375\assign1>
+
+
+
+
+
+with 300 hidden dims, 10 epochs, 0.5 data fraction
+(cs6375) C:\Users\Madha\Desktop\cs6375\assign1>python rnn.py --hidden_dim 300 --epochs 10 --train_data training.json --val_data validation.json --data_fraction 0.5
+========== Loading data ==========
+========== Vectorizing data ==========
+Training started for epoch 1
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 250/250 [04:27<00:00,  1.07s/it]
+Average Training Loss for epoch 1: 5.4235
+Training completed for epoch 1
+Training accuracy for epoch 1: 0.39725
+Validation started for epoch 1
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 400/400 [00:10<00:00, 38.24it/s]
+Validation completed for epoch 1
+Validation accuracy for epoch 1: 0.235
+Training started for epoch 2
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 250/250 [04:29<00:00,  1.08s/it]
+Average Training Loss for epoch 2: 1.2030
+Training completed for epoch 2
+Training accuracy for epoch 2: 0.468
+Validation started for epoch 2
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 400/400 [00:06<00:00, 59.52it/s]
+Validation completed for epoch 2
+Validation accuracy for epoch 2: 0.4275
+Training started for epoch 3
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 250/250 [04:19<00:00,  1.04s/it]
+Average Training Loss for epoch 3: 5.3388
+Training completed for epoch 3
+Training accuracy for epoch 3: 0.4255
+Validation started for epoch 3
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 400/400 [00:06<00:00, 57.26it/s]
+Validation completed for epoch 3
+Validation accuracy for epoch 3: 0.4375
+Training started for epoch 4
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 250/250 [04:43<00:00,  1.14s/it]
+Average Training Loss for epoch 4: 3.7527
+Training completed for epoch 4
+Training accuracy for epoch 4: 0.4145
+Validation started for epoch 4
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 400/400 [00:06<00:00, 58.13it/s]
+Validation completed for epoch 4
+Validation accuracy for epoch 4: 0.4025
+Training started for epoch 5
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 250/250 [04:33<00:00,  1.10s/it]
+Average Training Loss for epoch 5: 1.5151
+Training completed for epoch 5
+Training accuracy for epoch 5: 0.459
+Validation started for epoch 5
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 400/400 [00:07<00:00, 53.23it/s]
+Validation completed for epoch 5
+Validation accuracy for epoch 5: 0.3975
+Training done to avoid overfitting!
+Best validation accuracy is: 0.4025
+========== Testing Model ==========
+Testing started
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 400/400 [00:06<00:00, 62.24it/s]
+Testing completed
+Test accuracy: 10.75%
+
+(cs6375) C:\Users\Madha\Desktop\cs6375\assign1>
+
+
+
+
+
+500 hidden dims, 10 epochs, 0.5 data fraction
+(cs6375) C:\Users\Madha\Desktop\cs6375\assign1>python rnn.py --hidden_dim 500 --epochs 10 --train_data training.json --val_data validation.json --data_fraction 0.5
+========== Loading data ==========
+========== Vectorizing data ==========
+Training started for epoch 1
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 250/250 [06:12<00:00,  1.49s/it]
+Average Training Loss for epoch 1: 4.4935
+Training completed for epoch 1
+Training accuracy for epoch 1: 0.41075
+Validation started for epoch 1
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 400/400 [00:08<00:00, 48.45it/s]
+Validation completed for epoch 1
+Validation accuracy for epoch 1: 0.4025
+Training started for epoch 2
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 250/250 [09:58<00:00,  2.39s/it]
+Average Training Loss for epoch 2: 1.3558
+Training completed for epoch 2
+Training accuracy for epoch 2: 0.41175
+Validation started for epoch 2
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 400/400 [00:20<00:00, 19.43it/s]
+Validation completed for epoch 2
+Validation accuracy for epoch 2: 0.3175
+Training done to avoid overfitting!
+Best validation accuracy is: 0.4025
+========== Testing Model ==========
+Testing started
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 400/400 [00:16<00:00, 23.73it/s]
+Testing completed
+Test accuracy: 11.25%
+
+(cs6375) C:\Users\Madha\Desktop\cs6375\assign1>
+
+
+
+
+
+
+500 hidden dims, 15 epochs, 0.5 data fraction
+(cs6375) C:\Users\Madha\Desktop\cs6375\assign1>python rnn.py --hidden_dim 500 --epochs 15 --train_data training.json --val_data validation.json --data_fraction 0.5
+========== Loading data ==========
+========== Vectorizing data ==========
+Training started for epoch 1
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 250/250 [11:14<00:00,  2.70s/it]
+Average Training Loss for epoch 1: 3.1575
+Training completed for epoch 1
+Training accuracy for epoch 1: 0.3855
+Validation started for epoch 1
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 400/400 [00:16<00:00, 24.11it/s]
+Validation completed for epoch 1
+Validation accuracy for epoch 1: 0.4125
+Training started for epoch 2
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 250/250 [10:45<00:00,  2.58s/it]
+Average Training Loss for epoch 2: 1.4362
+Training completed for epoch 2
+Training accuracy for epoch 2: 0.3955
+Validation started for epoch 2
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 400/400 [00:15<00:00, 25.64it/s]
+Validation completed for epoch 2
+Validation accuracy for epoch 2: 0.4
+Training done to avoid overfitting!
+Best validation accuracy is: 0.4125
+========== Testing Model ==========
+Testing started
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 400/400 [00:11<00:00, 33.38it/s]
+Testing completed
+Test accuracy: 0.25%
+
+(cs6375) C:\Users\Madha\Desktop\cs6375\assign1>
+
+
+
+
+
+500 hidden dims, 15 epochs, 0.1 data fraction
+(cs6375) C:\Users\Madha\Desktop\cs6375\assign1>python rnn.py --hidden_dim 500 --epochs 15 --train_data training.json --val_data validation.json --data_fraction 0.1
+========== Loading data ==========
+========== Vectorizing data ==========
+Training started for epoch 1
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 50/50 [01:57<00:00,  2.35s/it]
+Average Training Loss for epoch 1: 21.4998
+Training completed for epoch 1
+Training accuracy for epoch 1: 0.37
+Validation started for epoch 1
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 80/80 [00:03<00:00, 24.05it/s]
+Validation completed for epoch 1
+Validation accuracy for epoch 1: 0.425
+Training started for epoch 2
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 50/50 [01:55<00:00,  2.31s/it]
+Average Training Loss for epoch 2: 1.6319
+Training completed for epoch 2
+Training accuracy for epoch 2: 0.39875
+Validation started for epoch 2
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 80/80 [00:03<00:00, 26.44it/s]
+Validation completed for epoch 2
+Validation accuracy for epoch 2: 0.325
+Training done to avoid overfitting!
+Best validation accuracy is: 0.425
+========== Testing Model ==========
+Testing started
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 80/80 [00:02<00:00, 27.20it/s]
+Testing completed
+Test accuracy: 3.75%
+
+(cs6375) C:\Users\Madha\Desktop\cs6375\assign1>
